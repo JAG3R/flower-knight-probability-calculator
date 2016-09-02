@@ -7,8 +7,10 @@ The '?' part is the place that you have to change it.
 I have added #remark so that you can know how to edit it.
 And I'm going to explain the rules of EVENT.
 Take level 12-4 for example:
-
-
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/img/example.jpg)
+EVENT={
+      coming soon ^^
+      }
 
 
 
