@@ -5,7 +5,7 @@ Changer=?#changer numbers
 Locker=[?]#the numbers on each lockers
 Gate=?#gate numbers
 INITIAL=[?]#initial targets for each camps
-'''if u want to simulat more precisely, go to wiki and download the map.
+'''if u want to simulate more precisely, go to wiki and download the map.
 Edit the map by Paint. Draw a line between circles and you can see the line holds ?x? pixels.
 Input the 2 arguments into the function--abc(,) and you can get the length of it.'''
 ##P*? can be replaced by abc(*,*)+...+abc(*,*)
