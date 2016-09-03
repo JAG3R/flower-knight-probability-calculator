@@ -53,6 +53,6 @@ def auto(fix,PT,EVENT,mobility,shuffle,E,C,L,G,INITIAL):
                 print 'MAX!!!:',deposit,team_speed,max_P,'%'
             Prob=passing/total*100.
             if Prob==0. or Prob==100.:break
-            if counter>40:#if u cant get a higher prob for * times,change a new set
+            if counter>40:#if u can't get a higher Prob for * times,change a new set
                 print 'shimakaze:o soi~'
                 break
