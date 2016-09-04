@@ -22,10 +22,10 @@ After that, you need to replace the '?' with the following datas:
 There may be more than 1 path that come into the target.  
 In this case, append -1,-2 after the target to enumerate it.  
 Each target has two PARTs--[PART1,[PART2]]  
-  1. for PART1:PART1 stands for the distance to reach the target.  
+  1. for PART1: PART1 stands for the distance to reach the target.  
     1. simple version: replace ? with P\*count (where count is the number of paths between targets) #P is the average path length. I have set it  
     2. precise version:Use Paint to get a precise path length.(see remark in the end)
-  2. for PART2:PART2 stands for the next target(s) which you might touch.  
+  2. for PART2: PART2 stands for the next target(s) which you might touch.  
     * selector: List all the next targets that this selector would go to.  
     * enemy: The next target(1)  
     * changer: List all the next targets that this changer would go to.  
