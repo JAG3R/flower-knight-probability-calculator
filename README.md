@@ -19,7 +19,7 @@ There may be more than 1 path that come into the target.
 In this case, append -1,-2 after the target to enumerate it.  
 Each target has two PARTs--[PART1,[PART2]]  
   1. for PART1: PART1 stands for the distance to reach the target.  
-    1. simple version: P\*count (where count is the number of paths between targets) #P is the average path length. I have set it  
+    1. simple version: the number of paths between targets
     2. precise version:Use Paint to get a precise path length.(see remark in the end)
   2. for PART2: PART2 stands for the next target(s) which you might touch.  
     * selector: List all the next targets that this selector would go to.  
@@ -46,31 +46,31 @@ Each target has two PARTs--[PART1,[PART2]]
   # Gate=0  
   # INITIAL=['Ea','Sb-1','Eb','Ec']  
   # EVENT =
-  {'Sa-1':[P\*4,['Ef','Sd-1']],  
-  'Sa-2':[P\*3,['Ef','Sd-1']],  
-  'Sb-1' : [P\*4,['Sa-2','Sc-1']],  
-  'Sb-2' : [P\*3,['Sa-2','Sc-1']],  
-  'Sc-1':[P\*2,['Sd-2','Ee-1']],  
-  'Sc-2':[P\*2,['Sd-2','Ee-1']],  
-  'Sd-1':[P\*3,['Eh-2','Eg']],  
-  'Sd-2':[P\*3,['Eh-2','Eg']],  
-  'Se':[P\*1,['Ed','Ee-2','Eh-5']],  
-  'Ea':[P\*2,['Sa-1']],  
-  'Eb':[P\*1,['Sb-2']],  
-  'Ec':[P\*1,['Se']],  
-  'Ed':[P\*1,['Sc-2']],  
-  'Ee-1':[P\*1,['Eh-4']],  
-  'Ee-2':[P\*2,['Eh-4']],  
-  'Ef':[P\*2,['Eh-1']],  
-  'Eg':[P\*1,['Eh-3']],  
-  'Eh-1':[P\*4,['end']],  
-  'Eh-2':[P\*4,['end']],  
-  'Eh-3':[P\*3,['end']],  
-  'Eh-4':[P\*5,['end']],  
-  'Eh-5':[P\*6,['end']],  
-  'end':[P\*2]}  
+  {'Sa-1':[4,['Ef','Sd-1']],  
+  'Sa-2':[3,['Ef','Sd-1']],  
+  'Sb-1' : [4,['Sa-2','Sc-1']],  
+  'Sb-2' : [3,['Sa-2','Sc-1']],  
+  'Sc-1':[2,['Sd-2','Ee-1']],  
+  'Sc-2':[2,['Sd-2','Ee-1']],  
+  'Sd-1':[3,['Eh-2','Eg']],  
+  'Sd-2':[3,['Eh-2','Eg']],  
+  'Se':[1,['Ed','Ee-2','Eh-5']],  
+  'Ea':[2,['Sa-1']],  
+  'Eb':[1,['Sb-2']],  
+  'Ec':[1,['Se']],  
+  'Ed':[1,['Sc-2']],  
+  'Ee-1':[1,['Eh-4']],  
+  'Ee-2':[2,['Eh-4']],  
+  'Ef':[2,['Eh-1']],  
+  'Eg':[1,['Eh-3']],  
+  'Eh-1':[4,['end']],  
+  'Eh-2':[4,['end']],  
+  'Eh-3':[3,['end']],  
+  'Eh-4':[5,['end']],  
+  'Eh-5':[6,['end']],  
+  'end':[2]}  
   # team_speed=\[727,727,727,727,727\]  
-  # shuffle=False  
+  # shuffle the team order=n  
 
   # result:  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/test/master/12-4.png)
@@ -83,5 +83,5 @@ After that, edit the map with Paint.
 Draw a line between two circles in order to measure the length of path.
 And you can see the line holds ?X? pixels.  
 Input the 2 arguments into the function abc(\*,\*) and that's the length of the path.  
-Last, replace PART1 with abc(\*,\*)+abc(\*,\*)+...+abc(\*,\*)
+Last, replace PART1 with (abc(\*,\*)+abc(\*,\*)+...+abc(\*,\*))/P  (P is set as the averaged path)
 
