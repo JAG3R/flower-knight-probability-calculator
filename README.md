@@ -45,30 +45,29 @@ for PART2:
 	decel(spiderweb): The next target(1)
 	end has no PART2.
 
-e.g. level 12-4
-
-EVENT ={'Sa-1':[P*4,['Ef','Sd-1']],#selector</br>
-		'Sa-2':[P*3,['Ef','Sd-1']],
-		'Sb-1':[P*4,['Sa-2','Sc-1']],
-		'Sb-2':[P*3,['Sa-2','Sc-1']],
-		'Sc-1':[P*2,['Sd-2','Ee-1']],
-		'Sc-2':[P*2,['Sd-2','Ee-1']],
-		'Sd-1':[P*3,['Eh-2','Eg']],
-		'Sd-2':[P*3,['Eh-2','Eg']],
-		'Se':[P*1,['Ed','Ee-2','Eh-5']],
-		'Ea':[P*2,['Sa-1']],#enemy
-		'Eb':[P*1,['Sb-2']],
-		'Ec':[P*1,['Se']],
-		'Ed':[P*1,['Sc-2']],
-		'Ee-1':[P*1,['Eh-4']],
-		'Ee-2':[P*2,['Eh-4']],
-		'Ef':[P*2,['Eh-1']],
-		'Eg':[P*1,['Eh-3']],
-		'Eh-1':[P*4,['end']],
-		'Eh-2':[P*4,['end']],
-		'Eh-3':[P*3,['end']],
-		'Eh-4':[P*5,['end']],
-		'Eh-5':[P*6,['end']],
-		'end':[P*2]
+e.g. level 12-4</br>
+EVENT ={'Sa-1':[P*4,['Ef','Sd-1']],#selector  
+		'Sa-2':[P*3,['Ef','Sd-1']],</br>
+		'Sb-1':[P*4,['Sa-2','Sc-1']],</br>
+		'Sb-2':[P*3,['Sa-2','Sc-1']],</br>
+		'Sc-1':[P*2,['Sd-2','Ee-1']],</br>
+		'Sc-2':[P*2,['Sd-2','Ee-1']],</br>
+		'Sd-1':[P*3,['Eh-2','Eg']],</br>
+		'Sd-2':[P*3,['Eh-2','Eg']],</br>
+		'Se':[P*1,['Ed','Ee-2','Eh-5']],</br>
+		'Ea':[P*2,['Sa-1']],#enemy</br>
+		'Eb':[P*1,['Sb-2']],</br>
+		'Ec':[P*1,['Se']],</br>
+		'Ed':[P*1,['Sc-2']],</br>
+		'Ee-1':[P*1,['Eh-4']],</br>
+		'Ee-2':[P*2,['Eh-4']],</br>
+		'Ef':[P*2,['Eh-1']],</br>
+		'Eg':[P*1,['Eh-3']],</br>
+		'Eh-1':[P*4,['end']],</br>
+		'Eh-2':[P*4,['end']],</br>
+		'Eh-3':[P*3,['end']],</br>
+		'Eh-4':[P*5,['end']],</br>
+		'Eh-5':[P*6,['end']],</br>
+		'end':[P*2]</br>
         }
 
