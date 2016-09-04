@@ -47,7 +47,7 @@ for PART2:
 
 e.g. level 12-4
 
-EVENT ={'Sa-1':[P*4,['Ef','Sd-1']],#selector
+EVENT ={'Sa-1':[P*4,['Ef','Sd-1']],#selector</br>
 		'Sa-2':[P*3,['Ef','Sd-1']],
 		'Sb-1':[P*4,['Sa-2','Sc-1']],
 		'Sb-2':[P*3,['Sa-2','Sc-1']],
