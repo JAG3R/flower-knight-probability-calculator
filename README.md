@@ -31,7 +31,7 @@ Each target has two PARTs--[PART1,[PART2]]
     1. simple version: replace ? with P\*count (where count is the number of paths between targets) #P is the average path length. I have set it  
     2. precise version: replace ? with abc(\*,\*)+abc(\*,\*)+...+abc(\*,\*) (where \* you need to measure it by Paint)  
   2. for PART2:PART2 stands for the next target(s) which you might touch.  
-  * selector: List all the next targets that this selector would go to.  
+    * selector: List all the next targets that this selector would go to.  
 enemy: The next target(1)  
 changer: List all the next targets that this changer would go to.  
 teleport: The next target(1)  
