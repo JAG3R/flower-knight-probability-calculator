@@ -39,7 +39,7 @@ Each target has two PARTs--[PART1,[PART2]]
 
 * Take level 12-4 for example:  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
-  - fix=[1,0,1,1]  
+  # fix=[1,0,1,1]  
   - Enemy=8  
   - Changer=0  
   - Locker=[]  
