@@ -1,29 +1,25 @@
 # flower-knight-probability-calculator
-This program is for the DMM game-- "Flower Knight Girl", searching for the best passing probability.
-After editing the main.py, run.
+This program is for the DMM game-- "Flower Knight Girl", searching for the best passing probability.  
 
-Editing main.py:
-First of all, you need to get the level map.
-You can find the map on Flower Knight Girl wiki (Japanese version).
-
+First of all, you need to get the level map.  
+You can find the map on Flower Knight Girl wiki (Japanese version).  
 Website:
-http://xn--eckq7fg8cygsa1a1je.xn--wiki-4i9hs14f.com/index.php?%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%E3%83%8A%E3%82%A4%E3%83%88%E3%82%AC%E3%83%BC%E3%83%AB%E6%94%BB%E7%95%A5%E3%81%BE%E3%81%A8%E3%82%81wiki
+http://xn--eckq7fg8cygsa1a1je.xn--wiki-4i9hs14f.com/index.php?%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%E3%83%8A%E3%82%A4%E3%83%88%E3%82%AC%E3%83%BC%E3%83%AB%E6%94%BB%E7%95%A5%E3%81%BE%E3%81%A8%E3%82%81wiki  
 
-
-First, you need to remark all the targets of the map. You can check all kinds of targets file to see all the targets.  
-After that, you need to replace the '?' with the following datas:  
+Use Paint to edit the map, you need to remark all the targets of the map. You can check all kinds of targets file to see all the targets.  
+After that, you need to input the following datas:  
 * fix: the least team arangement to avoid 0% pass  
 * Enemy:number of enemies  
 * Changer:number of changers  
-* Locker:the numbers on each lockers (If no lockers, just remove the '?')  
+* Locker:the numbers on each lockers (If no lockers, input \[\])  
 * Gate:number of gates  
 * INITIAL:initial targets for each camps  
-* Rules of EVENT:  
+* EVENT:  
 There may be more than 1 path that come into the target.  
 In this case, append -1,-2 after the target to enumerate it.  
 Each target has two PARTs--[PART1,[PART2]]  
   1. for PART1: PART1 stands for the distance to reach the target.  
-    1. simple version: replace ? with P\*count (where count is the number of paths between targets) #P is the average path length. I have set it  
+    1. simple version: P\*count (where count is the number of paths between targets) #P is the average path length. I have set it  
     2. precise version:Use Paint to get a precise path length.(see remark in the end)
   2. for PART2: PART2 stands for the next target(s) which you might touch.  
     * selector: List all the next targets that this selector would go to.  
@@ -36,11 +32,10 @@ Each target has two PARTs--[PART1,[PART2]]
     * accel(tornado): The next target(1)  
     * decel(spiderweb): The next target(1)  
     * end has no PART2.  
-* Input your 5 teams mobility. You can also input 4 or 3 teams.(rare to use)  
-team_speed=\[?,?,?,?,?\]  
-note: If you want to find best mobility:team_speed=\[0,0,0,0,0\]  
-shuffle=False  
-note: shuffle=True, shuffle your mobility order to get a bit higher probability(may spend a little bit longer time)  
+* team_speed:Input your 5 teams mobility. You can also input 4 or 3 teams.(rare to use)  
+  If you want to find best mobility:team_speed=\[0,0,0,0,0\]  
+* shuffle=False:
+  If you want to get a higher probability(may spend a little bit longer time), shuffle=True
 
 * Take level 12-4 for example:  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
@@ -50,36 +45,13 @@ note: shuffle=True, shuffle your mobility order to get a bit higher probability(
   - Locker=[]  
   - Gate=0  
   - INITIAL=['Ea','Sb-1','Eb','Ec']  
-  - EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],#selector  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sa-2':[P\*3,['Ef','Sd-1']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sb-1':[P\*4,['Sa-2','Sc-1']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sb-2':[P\*3,['Sa-2','Sc-1']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sc-1':[P\*2,['Sd-2','Ee-1']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sc-2':[P\*2,['Sd-2','Ee-1']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sd-1':[P\*3,['Eh-2','Eg']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sd-2':[P\*3,['Eh-2','Eg']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Se':[P\*1,['Ed','Ee-2','Eh-5']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Ea':[P\*2,['Sa-1']],#enemy  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Eb':[P\*1,['Sb-2']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Ec':[P\*1,['Se']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Ed':[P\*1,['Sc-2']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Ee-1':[P\*1,['Eh-4']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Ee-2':[P\*2,['Eh-4']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Ef':[P\*2,['Eh-1']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Eg':[P\*1,['Eh-3']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Eh-1':[P\*4,['end']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Eh-2':[P\*4,['end']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Eh-3':[P\*3,['end']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Eh-4':[P\*5,['end']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Eh-5':[P\*6,['end']],  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'end':[P\*2]  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}  
+  - EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],'Sa-2':[P\*3,['Ef','Sd-1']],'Sb-1':[P\*4,['Sa-2','Sc-1']],'Sb-2':[P\*3,['Sa-2','Sc-1']],'Sc-1':[P\*2,['Sd-2','Ee-1']],'Sc-2':[P\*2,['Sd-2','Ee-1']],'Sd-1':[P\*3,['Eh-2','Eg']],'Sd-2':[P\*3,['Eh-2','Eg']],'Se':[P\*1,['Ed','Ee-2','Eh-5']],'Ea':[P\*2,['Sa-1']],'Eb':[P\*1,['Sb-2']],'Ec':[P\*1,['Se']],'Ed':[P\*1,['Sc-2']],'Ee-1':[P\*1,['Eh-4']],'Ee-2':[P\*2,['Eh-4']],'Ef':[P\*2,['Eh-1']],'Eg':[P\*1,['Eh-3']],'Eh-1':[P\*4,['end']],'Eh-2':[P\*4,['end']],'Eh-3':[P\*3,['end']],'Eh-4':[P\*5,['end']],'Eh-5':[P\*6,['end']],'end':[P\*2]}  
 team_speed=\[727,727,727,727,727\]  
 shuffle=False  
 
   - result:  
 MAX!!!: [3, 0, 1, 1] [727, 727, 727, 727, 727] 9.9 %  
-=  
+================================  
 MAX!!!: [2, 1, 1, 1] [727, 727, 727, 727, 727] 13.5 %  
 ================================  
 MAX!!!: [2, 0, 2, 1] [727, 727, 727, 727, 727] 13.8 %  
