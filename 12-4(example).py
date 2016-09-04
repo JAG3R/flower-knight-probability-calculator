@@ -1,10 +1,11 @@
+from data import P
 from auto_run import*
-fix=[?]#the least team arangement to avoid 0% pass
-Enemy=?#number of enemies
-Changer=?#number of changers
-Locker=[?]#the numbers on each lockers
-Gate=?#number of gates
-INITIAL=[?]#initial targets for each camps
+fix=[1,0,1,1]#the least team arangement to avoid 0% pass
+Enemy=8#number of enemies
+Changer=0#number of changers
+Locker=[]#the numbers on each lockers
+Gate=0#number of gates
+INITIAL=['Ea','Sb-1','Eb','Ec']#initial targets for each camps
 '''If you want to simulate more precisely, go to wiki and download the map or take screenshot.(MUST 960X640 pixels!!!!!!)
 Edit the map by Paint. Draw a line between circles and you can see the line holds ?x? pixels.
 Input the 2 arguments into the function--abc(,) and you can get the length of it.'''
@@ -12,19 +13,29 @@ Input the 2 arguments into the function--abc(,) and you can get the length of it
 '''First, you need to mark all the organs with a,b,c...,z
 There may be more than 1 path that come into the organ.
 In this case, append -1,-2 after the organ to enumerate it.'''
-EVENT ={'Sa':[?,['?','?']],#selector
-        'Sb-1':[?,['?','?']],
-        'Sb-2':[?,['?','?']],
-        'Ea':[?,['?']],#enemy
-        'Ca':[?,['?','?']],#changer
-        'Ta':[?,['?']],#teleport
-        'La':[?,['?','?']],#locker
-        'Ba':[?,['?','?']],#button
-        'Ga':[?,['?']],#gate
-        'Aa':[?,['?']],#accel(tornado)
-        'Da':[?,['?']],#decel(spiderweb)
-        'end-1':[?],#end
-        'end-2':[?]
+EVENT ={'Sa-1':[P*4,['Ef','Sd-1']],#selector
+        'Sa-2':[P*3,['Ef','Sd-1']],
+        'Sb-1':[P*4,['Sa-2','Sc-1']],
+        'Sb-2':[P*3,['Sa-2','Sc-1']],
+        'Sc-1':[P*2,['Sd-2','Ee-1']],
+        'Sc-2':[P*2,['Sd-2','Ee-1']],
+        'Sd-1':[P*3,['Eh-2','Eg']],
+        'Sd-2':[P*3,['Eh-2','Eg']],
+        'Se':[P*1,['Ed','Ee-2','Eh-5']],
+        'Ea':[P*2,['Sa-1']],#enemy
+        'Eb':[P*1,['Sb-2']],
+        'Ec':[P*1,['Se']],
+        'Ed':[P*1,['Sc-2']],
+        'Ee-1':[P*1,['Eh-4']],
+        'Ee-2':[P*2,['Eh-4']],
+        'Ef':[P*2,['Eh-1']],
+        'Eg':[P*1,['Eh-3']],
+        'Eh-1':[P*4,['end']],
+        'Eh-2':[P*4,['end']],
+        'Eh-3':[P*3,['end']],
+        'Eh-4':[P*5,['end']],
+        'Eh-5':[P*6,['end']],
+        'end':[P*2]
         }
 '''Each organ has two PARTs--[PART1,[PART2]]
 for PART1:
@@ -47,10 +58,9 @@ for PART2:
 ##==================================================##
 '''Input your 5 teams mobility. You can also input 4 or 3 teams.(rare to use)'''
 ##If you want to find best mobility:team_speed=[0,0,0,0,0]
-team_speed=[?,?,?,?,?]
+team_speed=[727,727,727,727,727]
 ##shuffle=True:shuffle your mobility order to get a bit higher probability(may spend a little bit longer time)
 shuffle=False
 
 if sum(team_speed)==0:shuffle=True
 auto(fix,len(team_speed),EVENT,team_speed,shuffle,Enemy,Changer,Locker,Gate,INITIAL)
-

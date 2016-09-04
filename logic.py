@@ -20,7 +20,7 @@ def trans(trial,team,EVENT,Z):#Z:No. of next target
 
 def selector(trial,team,EVENT,n):
     choice=randint(0,n-1)
-    team=trans(trial,team,EVENT,choise)
+    team=trans(trial,team,EVENT,choice)
 
 def enemy(trial,team,EVENT,ENEMY,E):
     ENEMY[E]=0

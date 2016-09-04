@@ -2,7 +2,6 @@ from heap import*
 from logic import*
 from random import randint
 from itertools import permutations
-P=80#average length of a path
 def auto(fix,PT,EVENT,mobility,shuffle,E,C,L,G,INITIAL):
     m,n=len(fix),PT-sum(fix)
     X=heap(m,n)

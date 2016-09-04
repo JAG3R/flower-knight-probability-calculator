@@ -4,9 +4,13 @@ from numpy import*
 Edit the map by Paint. Draw a line between circles and you can see the line holds ?x? pixels.
 Input the 2 arguments into the function--abc(,) and you can get the length of it.
 The more datas you input, the more precise it is!!'''
+#======================================================#
 ##c**2=a**2+b**2
 def abc(a,b):
     return sqrt(a**2+b**2)
+#======================================================#
+#average length of a path
+P=80
 #======================================================#
 ##transfering mobility into pixels
 speed=[656,478,583,416,419,406,611,661,486]
