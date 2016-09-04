@@ -16,7 +16,7 @@ Take level 12-4 for example:
 First, you need to remark all the targets of the map. You can check all kinds of targets file to see all the targets.
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
 After that, you need to input the following datas:  
--fix: the least team arangement to avoid 0% pass  
+- fix: the least team arangement to avoid 0% pass  
 -Enemy:number of enemies  
 -Changer:number of changers  
 -Locker:the numbers on each lockers (If no lockers, just remove the '?')  
