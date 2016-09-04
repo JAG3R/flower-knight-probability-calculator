@@ -44,7 +44,7 @@ Each target has two PARTs--[PART1,[PART2]]
 
 * e.g. level 12-4  
 EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],#selector  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sa-2':[P\*3,['Ef','Sd-1']],  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sa-2':[P\*3,['Ef','Sd-1']],  
 'Sb-1':[P\*4,['Sa-2','Sc-1']],  
 'Sb-2':[P\*3,['Sa-2','Sc-1']],  
 'Sc-1':[P\*2,['Sd-2','Ee-1']],  
