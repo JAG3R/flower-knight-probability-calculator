@@ -1,4 +1,4 @@
-from numpy import*
+import math
 ###This module is aiming to transfering the mobility into pixels on Paint###
 '''If you want to get a more precise data,go to wiki and download the map or take screenshot.(MUST 960X640 pixels!!!!!!)
 Edit the map by Paint. Draw a line between circles and you can see the line holds ?x? pixels.
@@ -7,7 +7,7 @@ The more datas you input, the more precise it is!!'''
 #======================================================#
 ##c**2=a**2+b**2
 def abc(a,b):
-    return sqrt(a**2+b**2)
+    return math.sqrt(a**2+b**2)
 #======================================================#
 #average length of a path
 path=[abc(81,18),abc(88,10),abc(87,13),abc(133,9),abc(92,30),abc(96,6),abc(85,23),abc(73,70),abc(45,113),abc(61,65),abc(80,30),abc(75,18),abc(51,45),abc(116,3),abc(70,22),abc(80,24),abc(74,1),abc(93,1),abc(19,89),abc(68,57),abc(117,17),abc(64,32),abc(41,46),abc(58,58),abc(33,65),abc(60,46),abc(58,82),abc(58,42),abc(83,26),abc(130,69),abc(86,8),abc(15,81),abc(140,1),abc(80,1),abc(95,1),abc(43,70),abc(68,38),abc(80,40),abc(84,11),abc(36,61),abc(60,39),abc(73,72),abc(79,6),abc(84,16),abc(6,61),abc(129,1),abc(30,76),abc(59,50),abc(40,75),abc(91,76),abc(48,87),abc(11,154),abc(100,47)]

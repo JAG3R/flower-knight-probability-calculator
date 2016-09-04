@@ -5,7 +5,10 @@ from itertools import permutations
 def auto(fix,PT,EVENT,mobility,shuffle,E,C,L,G,INITIAL):
     m,n=len(fix),PT-sum(fix)
     X=heap(m,n)
-    test=[list(array(fix)+array(_)) for _ in X]
+    test=[]
+    for _ in X:
+        get=[fix[__]+_[__] for __ in range(m)]
+        test.append(get)
     for deposit in test:
         max_P,counter=0,0
         print '================================'
