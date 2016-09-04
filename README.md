@@ -9,9 +9,8 @@ You can find the map on Flower Knight Girl wiki (Japanese version).
 Website:
 http://xn--eckq7fg8cygsa1a1je.xn--wiki-4i9hs14f.com/index.php?%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%E3%83%8A%E3%82%A4%E3%83%88%E3%82%AC%E3%83%BC%E3%83%AB%E6%94%BB%E7%95%A5%E3%81%BE%E3%81%A8%E3%82%81wiki
 
-Take level 12-4 for example:
-First, you need to remark all the targets of the map. You can check all kinds of targets file to see all the targets.
-![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
+
+First, you need to remark all the targets of the map. You can check all kinds of targets file to see all the targets.  
 After that, you need to replace the '?' with the following datas:  
 * fix: the least team arangement to avoid 0% pass  
 * Enemy:number of enemies  
@@ -19,7 +18,6 @@ After that, you need to replace the '?' with the following datas:
 * Locker:the numbers on each lockers (If no lockers, just remove the '?')  
 * Gate:number of gates  
 * INITIAL:initial targets for each camps  
-
 * Rules of EVENT:  
 There may be more than 1 path that come into the target.  
 In this case, append -1,-2 after the target to enumerate it.  
@@ -39,7 +37,8 @@ Each target has two PARTs--[PART1,[PART2]]
     * decel(spiderweb): The next target(1)  
     * end has no PART2.  
 
-* e.g. level 12-4  
+* Take level 12-4 for example:  
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
 EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],#selector  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sa-2':[P\*3,['Ef','Sd-1']],  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sb-1':[P\*4,['Sa-2','Sc-1']],  
