@@ -39,6 +39,12 @@ Each target has two PARTs--[PART1,[PART2]]
 
 * Take level 12-4 for example:  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
+fix=[1,0,1,1]  
+Enemy=8  
+Changer=0  
+Locker=[]  
+Gate=0  
+INITIAL=['Ea','Sb-1','Eb','Ec']  
 EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],#selector  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sa-2':[P\*3,['Ef','Sd-1']],  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sb-1':[P\*4,['Sa-2','Sc-1']],  
