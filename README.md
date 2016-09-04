@@ -15,7 +15,7 @@ http://xn--eckq7fg8cygsa1a1je.xn--wiki-4i9hs14f.com/index.php?%E3%83%95%E3%83%A9
 Take level 12-4 for example:
 First, you need to remark all the targets of the map. You can check all kinds of targets file to see all the targets.
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
-After that, you need to input the following datas:  
+After that, you need to replace the '?' with the following datas:  
 * fix: the least team arangement to avoid 0% pass  
 * Enemy:number of enemies  
 * Changer:number of changers  
@@ -44,7 +44,7 @@ Each target has two PARTs--[PART1,[PART2]]
 
 * e.g. level 12-4  
 EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],#selector  
-    'Sa-2':[P\*3,['Ef','Sd-1']],  
+        'Sa-2':[P\*3,['Ef','Sd-1']],  
 'Sb-1':[P\*4,['Sa-2','Sc-1']],  
 'Sb-2':[P\*3,['Sa-2','Sc-1']],  
 'Sc-1':[P\*2,['Sd-2','Ee-1']],  
