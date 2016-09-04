@@ -36,6 +36,11 @@ Each target has two PARTs--[PART1,[PART2]]
     * accel(tornado): The next target(1)  
     * decel(spiderweb): The next target(1)  
     * end has no PART2.  
+* Input your 5 teams mobility. You can also input 4 or 3 teams.(rare to use)  
+If you want to find best mobility:team_speed=[0,0,0,0,0]  
+team_speed=[727,727,727,727,727]  
+shuffle=True:shuffle your mobility order to get a bit higher probability(may spend a little bit longer time)  
+shuffle=False  
 
 * Take level 12-4 for example:  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
