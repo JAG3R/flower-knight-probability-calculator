@@ -3,14 +3,11 @@ This program is for the DMM game-- "Flower Knight Girl", searching for the best 
 After editing the main.py, run.
 
 Editing main.py:
-First of all, you need to get a snapshot of the level map.
-And the size MUST be 960X640 pixels so that the ratio transfer will be correct.
+First of all, you need to get the level map.
 You can find the map on Flower Knight Girl wiki (Japanese version).
 
 Website:
 http://xn--eckq7fg8cygsa1a1je.xn--wiki-4i9hs14f.com/index.php?%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%E3%83%8A%E3%82%A4%E3%83%88%E3%82%AC%E3%83%BC%E3%83%AB%E6%94%BB%E7%95%A5%E3%81%BE%E3%81%A8%E3%82%81wiki
-
-**Note:Usually, the size MUST be 960X640 pixels. If not, you have to take a screenshot by yourself.**
 
 Take level 12-4 for example:
 First, you need to remark all the targets of the map. You can check all kinds of targets file to see all the targets.
@@ -29,7 +26,7 @@ In this case, append -1,-2 after the target to enumerate it.
 Each target has two PARTs--[PART1,[PART2]]  
   1. for PART1:PART1 stands for the distance to reach the target.  
     1. simple version: replace ? with P\*count (where count is the number of paths between targets) #P is the average path length. I have set it  
-    2. precise version: replace ? with abc(\*,\*)+abc(\*,\*)+...+abc(\*,\*) (where \* you need to measure it by Paint)  
+    2. precise version:Use Paint to get a precise path length.(see remark in the end)
   2. for PART2:PART2 stands for the next target(s) which you might touch.  
     * selector: List all the next targets that this selector would go to.  
     * enemy: The next target(1)  
@@ -67,4 +64,15 @@ EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],#selector
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Eh-5':[P\*6,['end']],  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'end':[P\*2]  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+
+
+* The method of measuring precise path length by Paint:  
+First, you need a map which size MUST be 960X640 pixels so that the ratio transfer will be correct.  
+Usually, you can find a 960X640 map on wiki. If not 960X640, you have to take snapshot by yourself.  
+**Note:The size MUST be 960X640 pixels. If not, the ratio transfer will be incorrect**  
+After that, edit the map with Paint.  
+Draw a line between two circles in order to measure the length of path.
+And you can see the line holds ?X? pixels.  
+Input the 2 arguments into the function abc(\*,\*) and that's the length of the path.
+Last, replace PART2 with abc(\*,\*)+abc(\*,\*)+...+abc(\*,\*)
 
