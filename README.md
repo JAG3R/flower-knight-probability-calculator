@@ -4,7 +4,7 @@ This program is for the DMM game-- "Flower Knight Girl", searching for the best 
 First of all, you need to get the level map.  
 You can find the map on Flower Knight Girl wiki (Japanese version).  
 Website:
-http://xn--eckq7fg8cygsa1a1je.xn--wiki-4i9hs14f.com/index.php?%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BC%E3%83%8A%E3%82%A4%E3%83%88%E3%82%AC%E3%83%BC%E3%83%AB%E6%94%BB%E7%95%A5%E3%81%BE%E3%81%A8%E3%82%81wiki  
+http://xn--eckq7fg8cygsa1a1je.xn--wiki-4i9hs14f.com/index.php?%E3%83%8E%E3%83%BC%E3%83%9E%E3%83%AB  
 
 Use Paint to edit the map, you need to remark all the targets of the map. You can check all kinds of targets file to see all the targets.  
 After that, you need to input the following datas:  
@@ -38,7 +38,7 @@ Each target has two PARTs--[PART1,[PART2]]
   If you want to get a higher probability(may spend a little bit longer time), shuffle=True
 
 * Take level 12-4 for example:  
-![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4_map.png)
   # fix=[1,0,1,1]  
   # Enemy=8  
   # Changer=0  
