@@ -44,13 +44,13 @@ note: shuffle=True, shuffle your mobility order to get a bit higher probability(
 
 * Take level 12-4 for example:  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
-fix=[1,0,1,1]  
-Enemy=8  
-Changer=0  
-Locker=[]  
-Gate=0  
-INITIAL=['Ea','Sb-1','Eb','Ec']  
-EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],#selector  
+  - fix=[1,0,1,1]  
+  - Enemy=8  
+  - Changer=0  
+  - Locker=[]  
+  - Gate=0  
+  - INITIAL=['Ea','Sb-1','Eb','Ec']  
+  - EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],#selector  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sa-2':[P\*3,['Ef','Sd-1']],  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sb-1':[P\*4,['Sa-2','Sc-1']],  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sb-2':[P\*3,['Sa-2','Sc-1']],  
@@ -76,6 +76,29 @@ EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],#selector
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}  
 team_speed=\[727,727,727,727,727\]  
 shuffle=False  
+
+  - result:  
+================================  
+MAX!!!: [3, 0, 1, 1] [727, 727, 727, 727, 727] 9.9 %  
+================================  
+MAX!!!: [2, 1, 1, 1] [727, 727, 727, 727, 727] 13.5 %  
+================================  
+MAX!!!: [2, 0, 2, 1] [727, 727, 727, 727, 727] 13.8 %  
+================================  
+MAX!!!: [2, 0, 1, 2] [727, 727, 727, 727, 727] 24.6 %  
+================================  
+MAX!!!: [1, 2, 1, 1] [727, 727, 727, 727, 727] 13.8 %  
+================================  
+MAX!!!: [1, 1, 2, 1] [727, 727, 727, 727, 727] 12.8 %  
+================================  
+MAX!!!: [1, 1, 1, 2] [727, 727, 727, 727, 727] 21.1 %  
+================================  
+MAX!!!: [1, 0, 3, 1] [727, 727, 727, 727, 727] 15.6 %  
+================================  
+MAX!!!: [1, 0, 2, 2] [727, 727, 727, 727, 727] 23.5 %  
+================================  
+MAX!!!: [1, 0, 1, 3] [727, 727, 727, 727, 727] 20.0 %  
+
 
 * The method of measuring precise path length by Paint:  
 First, you need a map which size MUST be 960X640 pixels so that the ratio transfer will be correct.  
