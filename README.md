@@ -15,7 +15,7 @@ Note:Usually, the size MUST be 960X640 pixels. If not, you have to take a screen
 The "?" part is the places that you have to edit.
 I have added #remark so that you can see how to edit it.
 Take level 12-4 for example:
-![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/img/example.jpg)
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
 
 
 
