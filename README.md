@@ -108,5 +108,5 @@ After that, edit the map with Paint.
 Draw a line between two circles in order to measure the length of path.
 And you can see the line holds ?X? pixels.  
 Input the 2 arguments into the function abc(\*,\*) and that's the length of the path.  
-Last, replace PART2 with abc(\*,\*)+abc(\*,\*)+...+abc(\*,\*)
+Last, replace PART1 with abc(\*,\*)+abc(\*,\*)+...+abc(\*,\*)
 
