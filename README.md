@@ -44,44 +44,44 @@ Each target has two PARTs--[PART1,[PART2]]
   # Changer=0  
   # Locker=[]  
   # Gate=0  
-  # INITIAL=['Ea','Sb-1','Eb','Ec']  
+  # INITIAL=["Ea","Sb-1","Eb","Ec"]  
   # EVENT =
-  {'Sa-1':[4,['Ef','Sd-1']],  
-  'Sa-2':[3,['Ef','Sd-1']],  
-  'Sb-1' : [4,['Sa-2','Sc-1']],  
-  'Sb-2' : [3,['Sa-2','Sc-1']],  
-  'Sc-1':[2,['Sd-2','Ee-1']],  
-  'Sc-2':[2,['Sd-2','Ee-1']],  
-  'Sd-1':[3,['Eh-2','Eg']],  
-  'Sd-2':[3,['Eh-2','Eg']],  
-  'Se':[1,['Ed','Ee-2','Eh-5']],  
-  'Ea':[2,['Sa-1']],  
-  'Eb':[1,['Sb-2']],  
-  'Ec':[1,['Se']],  
-  'Ed':[1,['Sc-2']],  
-  'Ee-1':[1,['Eh-4']],  
-  'Ee-2':[2,['Eh-4']],  
-  'Ef':[2,['Eh-1']],  
-  'Eg':[1,['Eh-3']],  
-  'Eh-1':[4,['end']],  
-  'Eh-2':[4,['end']],  
-  'Eh-3':[3,['end']],  
-  'Eh-4':[5,['end']],  
-  'Eh-5':[6,['end']],  
-  'end':[2]}  
+  {"Sa-1":[4,["Ef","Sd-1"]],  
+  "Sa-2":[3,["Ef","Sd-1"]],  
+  "Sb-1" : [4,["Sa-2","Sc-1"]],  
+  "Sb-2" : [3,["Sa-2","Sc-1"]],  
+  "Sc-1":[2,["Sd-2","Ee-1"]],  
+  "Sc-2":[2,["Sd-2","Ee-1"]],  
+  "Sd-1":[3,["Eh-2","Eg"]],  
+  "Sd-2":[3,["Eh-2","Eg"]],  
+  "Se":[1,["Ed","Ee-2","Eh-5"]],  
+  "Ea":[2,["Sa-1"]],  
+  "Eb":[1,["Sb-2"]],  
+  "Ec":[1,["Se"]],  
+  "Ed":[1,["Sc-2"]],  
+  "Ee-1":[1,["Eh-4"]],  
+  "Ee-2":[2,["Eh-4"]],  
+  "Ef":[2,["Eh-1"]],  
+  "Eg":[1,["Eh-3"]],  
+  "Eh-1":[4,["end"]],  
+  "Eh-2":[4,["end"]],  
+  "Eh-3":[3,["end"]],  
+  "Eh-4":[5,["end"]],  
+  "Eh-5":[6,["end"]],  
+  "end":[2]}  
   # team_speed=\[727,727,727,727,727\]  
   # shuffle the team order=n  
 
   # result:  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/test/master/12-4.png)
 
-* The method of measuring precise path length by Paint:(not recommend,it's a bit time consuming.)  
+* The method of measuring precise path length by Paint:(not recommend,it"s a bit time consuming.)  
 First, you need a map which size MUST be 960X640 pixels so that the ratio transfer will be correct.  
 Usually, you can find a 960X640 map on wiki. If not 960X640, you have to take snapshot by yourself.  
 **Note:The size MUST be 960X640 pixels. If not, the ratio transfer will be incorrect**  
 After that, edit the map with Paint.  
 Draw a line between two circles in order to measure the length of path.
 And you can see the line holds ?X? pixels.  
-Input the 2 arguments into the function abc(\*,\*) and that's the length of the path.  
+Input the 2 arguments into the function abc(\*,\*) and that"s the length of the path.  
 Last, replace PART1 with (abc(\*,\*)+abc(\*,\*)+...+abc(\*,\*))/P  (P is set as the averaged path)
 
