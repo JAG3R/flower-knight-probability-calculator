@@ -28,12 +28,12 @@ There may be more than 1 path that come into the target.
 In this case, append -1,-2 after the target to enumerate it.  
 Each target has two PARTs--[PART1,[PART2]]  
 
-- for PART1:
+  - for PART1:
 &nbsp;PART1 stands for the distance to reach the target.  
 &nbsp;&nbsp;simple version: replace ? with P\*count (where count is the number of paths between targets) #P is the average path length. I have set it  
 &nbsp;&nbsp;&nbsp;precise version: replace ? with abc(\*,\*)+abc(\*,\*)+...+abc(\*,\*) (where \* you need to measure it by Paint)  
 
-- for PART2:  
+  - for PART2:  
 &nbsp;&nbsp;&nbsp;&nbsp;PART2 stands for the next target(s) which you might touch.  
 &nbsp;&nbsp;&nbsp;&nbsp;selector: List all the next targets that this selector would go to.  
 &nbsp;&nbsp;&nbsp;&nbsp;enemy: The next target(1)  
