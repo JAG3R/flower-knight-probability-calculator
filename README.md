@@ -37,7 +37,7 @@ Each target has two PARTs--[PART1,[PART2]]
     * decel(spiderweb): The next target(1)  
     * end has no PART2.  
 * Input your 5 teams mobility. You can also input 4 or 3 teams.(rare to use)  
-team_speed=\[727,727,727,727,727\]  
+team_speed=\[?,?,?,?,?\]  
 note: If you want to find best mobility:team_speed=\[0,0,0,0,0\]  
 shuffle=False  
 note: shuffle=True, shuffle your mobility order to get a bit higher probability(may spend a little bit longer time)  
@@ -74,7 +74,8 @@ EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],#selector
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Eh-5':[P\*6,['end']],  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'end':[P\*2]  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
-
+team_speed=\[727,727,727,727,727\]  
+shuffle=False  
 
 * The method of measuring precise path length by Paint:  
 First, you need a map which size MUST be 960X640 pixels so that the ratio transfer will be correct.  
