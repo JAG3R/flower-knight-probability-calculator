@@ -50,6 +50,10 @@ for PART2:
 team_speed=[?,?,?,?,?]
 ##shuffle=True:shuffle your mobility order to get a bit higher probability(may spend a little bit longer time)
 shuffle=False
+##==================================================##
+
+
+
 
 if sum(team_speed)==0:shuffle=True
 auto(fix,len(team_speed),EVENT,team_speed,shuffle,Enemy,Changer,Locker,Gate,INITIAL)
