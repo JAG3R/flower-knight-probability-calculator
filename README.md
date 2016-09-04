@@ -73,6 +73,6 @@ Usually, you can find a 960X640 map on wiki. If not 960X640, you have to take sn
 After that, edit the map with Paint.  
 Draw a line between two circles in order to measure the length of path.
 And you can see the line holds ?X? pixels.  
-Input the 2 arguments into the function abc(\*,\*) and that's the length of the path.
+Input the 2 arguments into the function abc(\*,\*) and that's the length of the path.  
 Last, replace PART2 with abc(\*,\*)+abc(\*,\*)+...+abc(\*,\*)
 
