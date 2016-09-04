@@ -40,7 +40,7 @@ Each target has two PARTs--[PART1,[PART2]]
 team_speed=\[727,727,727,727,727\]  
 note: If you want to find best mobility:team_speed=\[0,0,0,0,0\]  
 shuffle=False  
-note: shuffle=True,shuffle your mobility order to get a bit higher probability(may spend a little bit longer time)  
+note: shuffle=True, shuffle your mobility order to get a bit higher probability(may spend a little bit longer time)  
 
 * Take level 12-4 for example:  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4(example).png)
