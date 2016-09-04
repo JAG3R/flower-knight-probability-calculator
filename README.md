@@ -84,7 +84,7 @@ MAX!!!: [1, 0, 3, 1] [727, 727, 727, 727, 727] 15.6 %
 MAX!!!: [1, 0, 2, 2] [727, 727, 727, 727, 727] 23.5 %  
 MAX!!!: [1, 0, 1, 3] [727, 727, 727, 727, 727] 20.0 % 
 
-* The method of measuring precise path length by Paint:  
+* The method of measuring precise path length by Paint:(not recommend,it's a bit time consuming.)  
 First, you need a map which size MUST be 960X640 pixels so that the ratio transfer will be correct.  
 Usually, you can find a 960X640 map on wiki. If not 960X640, you have to take snapshot by yourself.  
 **Note:The size MUST be 960X640 pixels. If not, the ratio transfer will be incorrect**  
