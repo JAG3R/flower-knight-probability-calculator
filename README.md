@@ -27,13 +27,11 @@ After that, you need to input the following datas:
 There may be more than 1 path that come into the target.  
 In this case, append -1,-2 after the target to enumerate it.  
 Each target has two PARTs--[PART1,[PART2]]  
-
-  1. for PART1:
+1. for PART1:
     - PART1 stands for the distance to reach the target.  
     1. simple version: replace ? with P\*count (where count is the number of paths between targets) #P is the average path length. I have set it  
     2. precise version: replace ? with abc(\*,\*)+abc(\*,\*)+...+abc(\*,\*) (where \* you need to measure it by Paint)  
-
-  2. for PART2:  
+2. for PART2:  
 &nbsp;&nbsp;&nbsp;&nbsp;PART2 stands for the next target(s) which you might touch.  
 &nbsp;&nbsp;&nbsp;&nbsp;selector: List all the next targets that this selector would go to.  
 &nbsp;&nbsp;&nbsp;&nbsp;enemy: The next target(1)  
@@ -46,7 +44,7 @@ Each target has two PARTs--[PART1,[PART2]]
 &nbsp;&nbsp;&nbsp;&nbsp;decel(spiderweb): The next target(1)  
 &nbsp;&nbsp;&nbsp;&nbsp;end has no PART2.  
 
-- e.g. level 12-4  
+* e.g. level 12-4  
 EVENT ={'Sa-1':[P\*4,['Ef','Sd-1']],#selector  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'Sa-2':[P\*3,['Ef','Sd-1']],  
 &nbsp;&nbsp;&nbsp;&nbsp;'Sb-1':[P\*4,['Sa-2','Sc-1']],  
