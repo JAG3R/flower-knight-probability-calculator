@@ -24,34 +24,34 @@ Each target has two PARTs--[PART1,[PART2]]
   2. for PART2: PART2 stands for the next target(s) which you might touch.  
     * selector: PART2 has more than 2 targets.  <b>(e.g.  "Sa-1" : [ ? , [ "?" , "?" ] ] )</b>  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/selector.png)  
-----------------------------------------------------------------------------------------------------------
-    * enemy: PART2 has 1 target.  <b>(e.g. "Ea-1" : [ ? , [ "?" ] ]  )</b>  
+----------------------------------------------------------------------------------------------------------  
+      * enemy: PART2 has 1 target.  <b>(e.g. "Ea-1" : [ ? , [ "?" ] ]  )</b>  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/enemy.png)  
-----------------------------------------------------------------------------------------------------------
-    * changer: PART2 has more than 2 targets.  <b>(e.g. "Ca-1" : [ ? , [ "?" , "?" ] ] )</b>  
+----------------------------------------------------------------------------------------------------------  
+      * changer: PART2 has more than 2 targets.  <b>(e.g. "Ca-1" : [ ? , [ "?" , "?" ] ] )</b>  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/changer.png)  
-----------------------------------------------------------------------------------------------------------
-    * teleport: PART2 has 1 target.  <b>(e.g. "Ta-1" : [ ? , [ "?" ] ])</b>  
+----------------------------------------------------------------------------------------------------------  
+      * teleport: PART2 has 1 target.  <b>(e.g. "Ta-1" : [ ? , [ "?" ] ])</b>  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/teleport.png)  
-----------------------------------------------------------------------------------------------------------
-    * locker: The next target(1),lock target(1)  <b>(e.g. "La-1" : [ ? , [ "?" , "?" ] ] )</b>  
+----------------------------------------------------------------------------------------------------------  
+      * locker: The next target(1),lock target(1)  <b>(e.g. "La-1" : [ ? , [ "?" , "?" ] ] )</b>  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/locker.png)  
-----------------------------------------------------------------------------------------------------------
-    * button: The next target(1),belonging gate(1)  <b>(e.g. "Ba-1" : [ ? , [ "?" , "?" ] ] )</b>  
+----------------------------------------------------------------------------------------------------------  
+      * button: The next target(1),belonging gate(1)  <b>(e.g. "Ba-1" : [ ? , [ "?" , "?" ] ] )</b>  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/button.png)  
-----------------------------------------------------------------------------------------------------------
-    * gate: PART2 has 1 target.  <b>(e.g. "Ga-1" : [ ? , [ "?" ] ] )</b>  
+----------------------------------------------------------------------------------------------------------  
+      * gate: PART2 has 1 target.  <b>(e.g. "Ga-1" : [ ? , [ "?" ] ] )</b>  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/gate.png)  
-----------------------------------------------------------------------------------------------------------
-    * accel(tornado): PART2 has 1 target.  <b>(e.g. "Aa-1" : [ ? , [ "?" ] ] )</b>  
+----------------------------------------------------------------------------------------------------------  
+      * accel(tornado): PART2 has 1 target.  <b>(e.g. "Aa-1" : [ ? , [ "?" ] ] )</b>  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/accel(tornado).png)  
-----------------------------------------------------------------------------------------------------------
-    * decel(spiderweb): PART2 has 1 target.  <b>(e.g. "Da-1" : [ ? , [ "?" ] )</b>  
+----------------------------------------------------------------------------------------------------------  
+      * decel(spiderweb): PART2 has 1 target.  <b>(e.g. "Da-1" : [ ? , [ "?" ] )</b>  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/decel(spiderweb).png)  
-----------------------------------------------------------------------------------------------------------
-    * end has no PART2.  <b>(e.g. "end" : [ ? ] )</b>  
+----------------------------------------------------------------------------------------------------------  
+      * end has no PART2.  <b>(e.g. "end" : [ ? ] )</b>  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/end.png)  
-----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------  
 * team_speed:Input your 5 teams mobility. You can also input 4 or 3 teams.(rare to use)  
   If you want to find best mobility:team_speed=\[0,0,0,0,0\]  
 * shuffle the order(y/n):  
