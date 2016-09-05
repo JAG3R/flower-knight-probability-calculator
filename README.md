@@ -73,7 +73,7 @@ Each target has two PARTs--[PART1,[PART2]]
   # shuffle the team order=n  
 
   # result:  
-![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4.png)
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4_result.png)
 
 * The method of measuring precise path length by Paint:(not recommend,it"s a bit time consuming.)  
 First, you need a map which size MUST be 960X640 pixels so that the ratio transfer will be correct.  
