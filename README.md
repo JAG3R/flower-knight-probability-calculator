@@ -22,20 +22,41 @@ Each target has two PARTs--[PART1,[PART2]]
     1. simple version: the number of paths between targets
     2. precise version:Use Paint to get a precise path length.(see remark in the end)
   2. for PART2: PART2 stands for the next target(s) which you might touch.  
-    * selector: List all the next targets that this selector would go to.  
-    * enemy: The next target(1)  
-    * changer: List all the next targets that this changer would go to.  
-    * teleport: The next target(1)  
-    * locker: The next target(1),lock target(1)  
-    * button: The next target(1),belonging gate(1)  
-    * gate: The next target(1)  
-    * accel(tornado): The next target(1)  
-    * decel(spiderweb): The next target(1)  
-    * end has no PART2.  
+    * selector: PART2 has more than 2 targets.  <b>(e.g.  "Sa-1" : [ ? , [ "?" , "?" ] ] )</b>  
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/selector.png)  
+----------------------------------------------------------------------------------------------------------
+    * enemy: PART2 has 1 target.  <b>(e.g. "Ea-1" : [ ? , [ "?" ] ]  )</b>  
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/enemy.png)  
+----------------------------------------------------------------------------------------------------------
+    * changer: PART2 has more than 2 targets.  <b>(e.g. "Ca-1" : [ ? , [ "?" , "?" ] ] )</b>  
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/changer.png)  
+----------------------------------------------------------------------------------------------------------
+    * teleport: PART2 has 1 target.  <b>(e.g. "Ta-1" : [ ? , [ "?" ] ])</b>  
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/teleport.png)  
+----------------------------------------------------------------------------------------------------------
+    * locker: The next target(1),lock target(1)  <b>(e.g. "La-1" : [ ? , [ "?" , "?" ] ] )</b>  
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/locker.png)  
+----------------------------------------------------------------------------------------------------------
+    * button: The next target(1),belonging gate(1)  <b>(e.g. "Ba-1" : [ ? , [ "?" , "?" ] ] )</b>  
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/button.png)  
+----------------------------------------------------------------------------------------------------------
+    * gate: PART2 has 1 target.  <b>(e.g. "Ga-1" : [ ? , [ "?" ] ] )</b>  
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/gate.png)  
+----------------------------------------------------------------------------------------------------------
+    * accel(tornado): PART2 has 1 target.  <b>(e.g. "Aa-1" : [ ? , [ "?" ] ] )</b>  
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/accel(tornado).png)  
+----------------------------------------------------------------------------------------------------------
+    * decel(spiderweb): PART2 has 1 target.  <b>(e.g. "Da-1" : [ ? , [ "?" ] )</b>  
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/decel(spiderweb).png)  
+----------------------------------------------------------------------------------------------------------
+    * end has no PART2.  <b>(e.g. "end" : [ ? ] )</b>  
+![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/all%20kind%20of%20targets/end.png)  
+----------------------------------------------------------------------------------------------------------
 * team_speed:Input your 5 teams mobility. You can also input 4 or 3 teams.(rare to use)  
   If you want to find best mobility:team_speed=\[0,0,0,0,0\]  
-* shuffle=False:
-  If you want to get a higher probability(may spend a little bit longer time), shuffle=True
+* shuffle the order(y/n):  
+  y : shuffle your tema order to get a higher probability.  
+  n : don't shuffle
 
 * Take level 12-4 for example:  
 ![alt tag](https://raw.githubusercontent.com/JAG3R/flower-knight-probability-calculator/master/12-4_map.png)
